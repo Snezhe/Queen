@@ -2,4 +2,11 @@
 <header></header>
 <nav></nav>
 <router-outlet></router-outlet>
+<div id="Lyrics"> 
+    Title<input type="text" [(ngModel)]="Title">
+   <button (click)="search()">Search</button>
+   <div *ngIf="response">
+      <p id="lyrics"> Lyrics:{{response.lyrics}} </p>
+    </div>
+</div>
 <footer></footer>
