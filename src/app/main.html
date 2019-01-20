@@ -1,12 +1,17 @@
 <div id="container">
 <header></header>
 <nav></nav>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> 
+<br>
 <div id="Lyrics"> 
-    Title<input type="text" [(ngModel)]="Title">
+   <input type="text" [(ngModel)]="Title">
    <button (click)="search()">Search</button>
    <div *ngIf="response">
       <p id="lyrics"> Lyrics:{{response.lyrics}} </p>
     </div>
 </div>
+<br>
+<p id="text">Enter your favorite Queen's song to find out the lyrics!</p>
+<img src="./assets/photos/queen1.jpg" width="100%" />
+<img id="arrow" src="./assets/photos/arrow.gif" width="100%" />
 <footer></footer>

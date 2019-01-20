@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bookman';
     font-size: 20px;
     line-height: 22px;
     color: #010000;
@@ -10,7 +10,7 @@ body {
 
 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 23px;
     color: #010000;
 }
@@ -103,30 +103,58 @@ nav ul li a:hover {
 
 footer {
     background:#010000;
-    color:#ffffff;
-    min-height: 200px; 
     width: 100%;
     margin: 0 0px;
-    padding: 0;
+    padding: 70px 0 5px 0;
+}
+
+#footer1 {
+    font: normal 70% 'lucida sans unicode', arial, sans-serif;
+    text-align: center; 
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 #Lyrics {
-    position: center;
+    position: absolute;
     text-align: center;
+    margin: 0 5%;
+    bottom: -925px;
 }
 
 #lyrics {
-    width: 20%;
-    font-size: 15px;
+    width: 115%;
+    font-family: 'Roboto';
+    color: aliceblue;
+    font-size: 12px;
     text-align: center;
-    margin: 0 40%;
+    position: absolute;
+    bottom: auto;
+    top:auto;
+    left:auto;
+    right: auto;
+}
+
+#text {
+    color: aliceblue;
+    position: absolute;
+    margin: 0 30%;
+    bottom: -925px;
+}
+
+#arrow {
+    width: 5%;
+    position: relative;
+    bottom: 800px;
+    margin: 0 28%;
 }
 
  @media only screen and (max-width: 1345px) {
         
     #container {
          width: auto;
-         margin: 0 3%;
+         margin: auto;
        }
-
+       
 }

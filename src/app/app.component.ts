@@ -17,13 +17,14 @@ export class AppComponent {
   Title: string = '';
   response: any;
 
-  constructor(private http:HttpClient) {} 
+  constructor (private http:HttpClient) {} 
 
   search() {
     this.http.get('https://api.lyrics.ovh/v1/Queen'+'/'+this.Title)
       .subscribe((response) => {
         this.response = response;
         console.log(this.response);
+        error => console.log(error);
       });
   }
 
