@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { _headerComponent } from './header/app.headerComponent';
 import { _navComponent } from './nav/app.navComponent';
@@ -10,5 +11,21 @@ import { _contactComponent } from './contact/app.contactComponent';
   selector: 'app-root',
   templateUrl: './main.html',
 })
+
 export class AppComponent {
+
+  Title: string = '';
+  response: any;
+
+  constructor(private http:HttpClient) {} 
+
+  search() {
+    this.http.get('https://api.lyrics.ovh/v1/Queen'+'/'+this.Title)
+      .subscribe((response) => {
+        this.response = response;
+        console.log(this.response);
+      });
+  }
+
+
 }

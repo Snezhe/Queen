@@ -3,7 +3,7 @@ body {
     font-size: 20px;
     line-height: 22px;
     color: #010000;
-    max-width: 1920px;
+    max-width: auto;
     margin: 0 auto;
     padding: 0;
 }
@@ -105,16 +105,28 @@ footer {
     background:#010000;
     color:#ffffff;
     min-height: 200px; 
-    width: 98.2%;
-    margin: 0 12px;
+    width: 100%;
+    margin: 0 0px;
     padding: 0;
+}
+
+.Lyrics {
+    position: center;
+    text-align: center;
+}
+
+#lyrics {
+    width: 20%;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 40%;
 }
 
  @media only screen and (max-width: 1345px) {
         
     #container {
-            width: auto;
-            margin: 0 3%;
+         width: auto;
+         margin: 0 3%;
        }
 
 }

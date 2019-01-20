@@ -1,7 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { _headerComponent } from './header/app.headerComponent';
 import { _navComponent } from './nav/app.navComponent';
@@ -23,6 +26,8 @@ import { _contactComponent } from './contact/app.contactComponent';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       {
           path: '',
@@ -41,4 +46,5 @@ import { _contactComponent } from './contact/app.contactComponent';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
