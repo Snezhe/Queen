@@ -150,6 +150,11 @@ footer {
     margin: 0 28%;
 }
 
+#image1 {
+    width: 1325px;
+    height: 850px;
+}
+
  @media only screen and (max-width: 1345px) {
         
     #container {
